@@ -1,0 +1,378 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgba(209, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+}
+body .logo_sabarija {
+  width: 100px;
+  height: 100px;
+}
+body .banner {
+  background-image: url("./sabarija_slika.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 2s ease-in-out;
+}
+body .banner .banner-content {
+  color: rgba(209, 0, 0, 0.8);
+  text-align: center;
+  animation: fadeInUp 4s ease-in-out;
+  padding: 20px;
+}
+body .banner .banner-content h1 {
+  margin: 0;
+  font-size: 5rem;
+}
+body .banner .banner-content p {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+@media (max-width: 557px) {
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(209, 0, 0, 0.8);
+    margin: 0;
+    padding: 0;
+  }
+  body .banner {
+    border-radius: 5px;
+    background-image: url("./sabarija_slika.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  body .banner .banner-content {
+    color: rgba(209, 0, 0, 0.8);
+    text-align: center;
+    animation: fadeInUp 4s ease-in-out;
+    padding: 20px;
+  }
+  body .banner .banner-content h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  body .banner .banner-content p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1350px) {
+  .banner {
+    height: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    height: 700px;
+  }
+}
+@media (min-width: 1100px) {
+  .banner {
+    height: 600px;
+  }
+}
+@media (min-width: 900px) {
+  .banner {
+    height: 600px;
+  }
+}
+@media (max-width: 557px) {
+  header {
+    background-color: rgba(209, 0, 0, 0.8);
+    color: #fff;
+  }
+  header .container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  header .container h1 {
+    display: inline-block;
+  }
+  header nav {
+    float: left;
+  }
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px;
+    display: inline;
+  }
+  header nav ul li {
+    display: inline;
+    margin: 20px;
+    padding: 20px;
+  }
+  header nav ul li:first-child {
+    margin-left: 0;
+  }
+  header nav ul li a {
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    border-bottom: #fff 1px solid;
+  }
+  header nav ul li a:hover {
+    background-color: #c6c6c6;
+    transition: 2s;
+  }
+}
+header {
+  background-color: rgba(209, 0, 0, 0.8);
+  color: #fff;
+}
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .container h1 {
+  display: inline-block;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 40px;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+header nav ul li:first-child {
+  margin-left: 0;
+}
+header nav ul li a {
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+  border-bottom: #fff 1px solid;
+}
+header nav ul li a:hover {
+  background-color: #c6c6c6;
+  transition: 2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+main {
+  padding: 20px;
+}
+main .gallery {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+main .gallery h2 {
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-shadow: 5px 5px 10px;
+}
+main .gallery .wrapper {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+main .gallery .wrapper .formacija {
+  box-shadow: 5px 5px 10px;
+}
+main .gallery .wrapper .formacija .img {
+  width: 100%;
+  height: 100%;
+}
+main .gallery .image {
+  margin: 20px;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px;
+  text-shadow: 5px 5px 10px;
+}
+main .gallery .image img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+main .gallery .image p {
+  color: white;
+  margin-top: 10px;
+}
+
+@media (max-width: 1300px) {
+  .gallery {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  .gallery h2 {
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    text-shadow: 5px 5px 10px;
+  }
+  .gallery .wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .gallery .wrapper .formacija {
+    box-shadow: 5px 5px 10px;
+  }
+  .gallery .wrapper .formacija .img {
+    width: 100%;
+    height: 100%;
+  }
+  .gallery .image {
+    margin: 20px;
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px;
+    text-shadow: 5px 5px 10px;
+  }
+  .gallery .image img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .gallery .image p {
+    color: white;
+    margin-top: 10px;
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev {
+  left: 0;
+  margin-left: 10px;
+}
+
+.next {
+  right: 0;
+  margin-right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tableStandingsFont {
+  color: white;
+}
+.tableStandingsFont a {
+  color: white;
+}
+
+.tableStandings #sofa-standings-embed-121631-54537 {
+  width: 100%;
+}
+.tableStandings h2 {
+  color: white;
+}
+
+#foot a {
+  color: white;
+}
+
+.o_nama {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+.o_nama h2 {
+  text-align: center;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
