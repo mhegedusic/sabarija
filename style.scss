@@ -283,6 +283,9 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      .igraci{
+        text-align: center;
+      }
       .formacija {
         box-shadow: 5px 5px 10px;
         .img {

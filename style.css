@@ -242,6 +242,9 @@ main .gallery .image p {
     flex-direction: column;
     justify-content: space-around;
   }
+  .gallery .wrapper .igraci {
+    text-align: center;
+  }
   .gallery .wrapper .formacija {
     box-shadow: 5px 5px 10px;
   }
