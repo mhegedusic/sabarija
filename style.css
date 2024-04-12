@@ -92,25 +92,28 @@ body .banner .banner-content p {
     display: inline-block;
   }
   header nav {
-    float: left;
+    float: right;
   }
   header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 50px;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: baseline;
   }
   header nav ul li {
-    display: inline;
-    margin: 20px;
-    padding: 20px;
+    font-size: 10px;
   }
   header nav ul li:first-child {
     margin-left: 0;
   }
   header nav ul li a {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     border-bottom: #fff 1px solid;
   }
