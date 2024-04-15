@@ -212,6 +212,7 @@ main .gallery .image {
   border-radius: 5px;
   box-shadow: 5px 5px 20px;
   text-shadow: 5px 5px 10px;
+  text-align: center;
 }
 main .gallery .image img {
   max-width: 100%;
